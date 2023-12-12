@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="./css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Meu Projeto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despesas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css"> <!-- Vincula o arquivo CSS externo -->
 </head>
 <body>
-    <h1>Site da Nyvia</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-    <ol> 
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-    </ol>
-    <img src="./images/iphone.jpg" alt="Iphone 15 Pro Max">
-    <img src="./images/perfume.webp" alt="Perfume">
 
+  <div class="container mt-5">
+    <h2>Despesas</h2>
+
+    
+    <form class="mx-auto custom-width">
+
+      <div class="form-group">
+        <label for="nomeDespesa">Nome da Despesa:</label>
+        <input type="text" class="form-control" id="nomeDespesa" placeholder="Informe o nome da despesa" required>
+      </div>
+
+      <div class="form-group">
+        <label for="valorDespesa">Valor da Despesa:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">R$</span>
+          </div>
+          <input type="number" class="form-control" id="valorDespesa" placeholder="Informe o valor da despesa" required step="0.01" name="quantity" min="0.01">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="dataDespesa">Data:</label>
+        <input type="date" class="form-control" id="dataDespesa" required>
+      </div>
+
+      <div class="form-group">
+        <label for="categoriaDespesa">Categoria:</label>
+        <select class="form-control" id="categoriaDespesa" required>
+          <option value="" disabled selected>Selecione a categoria</option>
+          <option value="alimentacao">Alimentação</option>
+          <option value="moradia">Educação</option>
+          <option value="transporte">Lazer</option>
+          <option value="educacao">Moradia</option>
+          <option value="educacao">Saúde</option>
+          <option value="educacao">Transporte</option>
+          
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="submit" class="btn btn-primary">Cancelar</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container text-center">
+        <button type="submit" class="btn btn-primary btn-despesas">Home</button>
+        <button type="submit" class="btn btn-primary btn-receitas">Receitas</button>
+        <button type="submit" class="btn btn-primary btn-home">Despesas</button>
+        <button type="submit" class="btn btn-primary btn-relatorios">Relatórios</button>
+        <button type="submit" class="btn btn-primary btn-configuracoes">Configurações</button>
+      
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
 

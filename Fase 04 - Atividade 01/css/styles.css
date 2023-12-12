@@ -1,0 +1,81 @@
+
+body {font-family: 'Poppins', sans-serif;
+}
+
+.custom-width {
+  width: 90%;
+}
+
+.btn {
+background-color: red;
+}
+
+form {
+
+  max-width: 500px
+
+}
+
+.form-group {
+  margin: 10px;
+}
+
+h2 {
+ text-align: center;
+
+}
+
+button {
+  padding: 30px;
+  margin: 10px;
+  min-width: 100px 
+
+}
+
+li {
+  border-radius: 5px;
+  padding: 25px
+  
+
+}
+
+.footer {
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+  
+}
+
+
+.btn-despesas {
+    background-color: white;    
+    color: red;   
+    
+}
+
+.btn-receitas {
+  background-color: white;    
+  color: red;   
+  
+}
+
+.btn-home {
+  background-color: white;    
+  color: red;   
+  
+}
+
+.btn-relatorios {
+  background-color: white;    
+  color: red;   
+  
+}
+
+.btn-configuracoes {
+  background-color: white;    
+  color: red;   
+  
+}
+
