@@ -1,0 +1,31 @@
+body { 
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(236, 230, 230);
+}
+
+h1 {
+    color: rgb(12, 12, 12);
+    text-align: center;
+    font-size: 45px;
+}
+
+h2 {
+    color: rgb(12, 12, 12);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+   /* font-style: italic;*/
+    text-align: justify;
+    text-transform: lowercase;
+}
+
+ol {
+    list-style: upper-roman;
+    font-size: 30px;
+}
+
+img {
+    width: 40%;
+    border-radius: 13px;
+    
+}
